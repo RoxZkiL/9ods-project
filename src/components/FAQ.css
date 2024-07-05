@@ -1,0 +1,17 @@
+.faq {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.faq div {
+    margin-bottom: 1rem;
+}
+
+.faq h2,
+.faq h3 {
+    margin: 0;
+}
+
+.faq p {
+    margin: 0.5rem 0 0;
+}

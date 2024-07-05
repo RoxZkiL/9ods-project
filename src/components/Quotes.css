@@ -1,0 +1,24 @@
+.quotes {
+    padding: 2rem;
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+.quotes .quote-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.quotes .quote {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+.quotes blockquote {
+    margin: 0;
+    font-style: italic;
+}

@@ -1,0 +1,84 @@
+.header {
+    background-color: #f0fdf4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(240, 253, 244, 0.79);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.figma-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0 0.2rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+}
+
+.nav-links li:hover {
+    background-color: #a7f3d0;
+    cursor: pointer;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 4rem;
+}
+
+.auth-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #34d399;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.482);
+}
+
+.auth-buttons button:hover {
+    background-color: #34d39991;
+}
+
+.auth-buttons button:last-child {
+    background-color: #666666;
+    color: white;
+}
+
+.auth-buttons button:last-child:hover {
+    background-color: #66666690;
+}

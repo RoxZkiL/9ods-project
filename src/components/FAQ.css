@@ -1,17 +1,38 @@
 .faq {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    border-top: 4px groove #00000029;
+    border-bottom: 4px groove rgba(0, 0, 0, 0.159);
+    background-color: rgba(255, 255, 255, 0.608);
+}
+
+.img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
-    background-color: #ffffff;
 }
 
-.faq div {
-    margin-bottom: 1rem;
+.img-div img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 6rem;
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.472);
+    transition: background-color 0.3s ease;
 }
 
-.faq h2,
-.faq h3 {
-    margin: 0;
+.text-div {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.7rem;
+    font-family: Calibri;
 }
 
-.faq p {
-    margin: 0.5rem 0 0;
+.heading-div legend {
+    font-weight: 800;
 }

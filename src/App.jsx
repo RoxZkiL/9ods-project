@@ -1,9 +1,10 @@
-import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
+import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
 import { FAQ } from "./components/FAQ";
-import Quotes from './components/Quotes';
-import Footer from './components/Footer';
+import Goals from "./components/Goals";
+import Quotes from "./components/Quotes";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Main />
       <FAQ />
+      <Goals />
       <Quotes />
       <Footer />
     </div>

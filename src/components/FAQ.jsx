@@ -17,8 +17,9 @@ export const FAQ = () => {
         </div>
         <div className="main-text">
           <p>
-            El Objetivo 9 pretende construir infraestructuras resilientes,
-            promover la industrialización sostenible y fomentar la innovación.
+            El desarollo sostenible pretende construir infraestructuras
+            resilientes, promover la industrialización sostenible y fomentar la
+            innovación.
           </p>
           <p>
             El crecimiento económico, el desarrollo social y la acción por el

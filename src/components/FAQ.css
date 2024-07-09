@@ -6,7 +6,7 @@
     border-bottom: 4px groove rgba(0, 0, 0, 0.159);
     background-color: rgba(255, 255, 255, 0.608);
     padding: 2rem;
-    min-height: 100vh; /* Cambiar auto por min-height */
+    height: auto; 
 }
 
 .img-div {
@@ -42,36 +42,39 @@
 
 /* Media Queries */
 
+/* Pantallas medianas (mínimo 768px) */
 @media (min-width: 768px) {
     .faq {
         flex-direction: row;
-        padding: 2rem;
+        padding: 4rem;
     }
 
     .img-div {
-        width: 40%; 
+        width: 50%; 
     }
 
     .text-div {
-        padding: 1rem;
-        font-size: 1.1rem; 
+        padding: 4rem;
+        font-size: 1.4rem; 
     }
 }
 
+/* Pantallas grandes (mínimo 1024px) */
 @media (min-width: 1024px) {
     .img-div {
         width: 50%; 
     }
 
     .text-div {
-        padding: 1rem;
-        font-size: 1.4rem; 
+        padding: 7rem;
+        font-size: 1.6rem; 
     }
 }
 
+/* Pantallas 12 pulgadas (mínimo 1280px) */
 @media (min-width: 1280px) {
     .faq {
-        padding: 2rem;
+        padding: 3rem;
     }
 
     .img-div {
@@ -79,14 +82,15 @@
     }
 
     .text-div {
-        padding: 1rem;
-        font-size: 1.2rem; 
+        padding: 5rem;
+        font-size: 1.5rem; 
     }
 }
 
+/* Pantallas 14 pulgadas (mínimo 1440px) */
 @media (min-width: 1440px) {
     .faq {
-        padding: 2rem;
+        padding: 3.5rem;
     }
 
     .img-div {
@@ -94,11 +98,12 @@
     }
 
     .text-div {
-        padding: 2rem;
-        font-size: 1.4rem; 
+        padding: 6rem;
+        font-size: 1.6rem; 
     }
 }
 
+/* Pantallas 16 pulgadas (mínimo 1920px) */
 @media (min-width: 1920px) {
     .faq {
         padding: 4rem;
@@ -109,7 +114,24 @@
     }
 
     .text-div {
-        padding: 2rem;
-        font-size: 1.6rem; 
+        padding: 7rem;
+        font-size: 1.8rem; 
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .faq {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .img-div {
+        padding: 1rem;
+    }
+
+    .text-div {
+        padding: 1rem;
+        font-size: 1rem;
     }
 }

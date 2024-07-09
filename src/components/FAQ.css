@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
     border-top: 4px groove #00000029;
     border-bottom: 4px groove rgba(0, 0, 0, 0.159);
     background-color: rgba(255, 255, 255, 0.608);
-    padding: 2rem;
-    height: auto; 
+    padding: 4rem;
+    min-height: 100vh; /* Asegura que ocupe todo el alto de la vista */
+    box-sizing: border-box;
 }
 
 .img-div {
@@ -14,7 +16,8 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    width: 100%; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .img-div img {
@@ -34,6 +37,7 @@
     font-size: 1.2rem; 
     font-family: Calibri;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .heading-div legend {
@@ -42,41 +46,39 @@
 
 /* Media Queries */
 
-/* Pantallas medianas (mínimo 768px) */
 @media (min-width: 768px) {
     .faq {
         flex-direction: row;
-        padding: 4rem;
+        align-items: center; /* Centra el contenido verticalmente */
+        padding: 2rem;
     }
 
     .img-div {
-        width: 50%; 
+        width: 40%; 
     }
 
     .text-div {
-        padding: 4rem;
-        font-size: 1.4rem; 
-        text-align: center;
+        width: 60%; 
+        padding: 1rem;
+        font-size: 1.1rem; 
     }
 }
 
-/* Pantallas grandes (mínimo 1024px) */
 @media (min-width: 1024px) {
     .img-div {
         width: 50%; 
     }
 
     .text-div {
-        padding: 7rem;
-        font-size: 1.6rem; 
-        text-align: center;
+        width: 50%;
+        padding: 1rem;
+        font-size: 1.4rem; 
     }
 }
 
-/* Pantallas 12 pulgadas (mínimo 1280px) */
 @media (min-width: 1280px) {
     .faq {
-        padding: 3rem;
+        padding: 2rem;
     }
 
     .img-div {
@@ -84,16 +86,15 @@
     }
 
     .text-div {
-        padding: 5rem;
-        font-size: 1.5rem;
-        text-align: center; 
+        width: 55%;
+        padding: 1rem;
+        font-size: 1.2rem; 
     }
 }
 
-/* Pantallas 14 pulgadas (mínimo 1440px) */
 @media (min-width: 1440px) {
     .faq {
-        padding: 3.5rem;
+        padding: 2rem;
     }
 
     .img-div {
@@ -101,13 +102,12 @@
     }
 
     .text-div {
-        padding: 6rem;
-        font-size: 1.6rem;
-        text-align: center; 
+        width: 55%;
+        padding: 2rem;
+        font-size: 1.4rem; 
     }
 }
 
-/* Pantallas 16 pulgadas (mínimo 1920px) */
 @media (min-width: 1920px) {
     .faq {
         padding: 4rem;
@@ -118,26 +118,8 @@
     }
 
     .text-div {
-        padding: 7rem;
-        font-size: 1.8rem;
-        text-align: center; 
-    }
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 767px) {
-    .faq {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .img-div {
-        padding: 1rem;
-    }
-
-    .text-div {
-        padding: 1rem;
-        font-size: 1rem;
-        text-align: center;
+        width: 60%;
+        padding: 2rem;
+        font-size: 1.6rem; 
     }
 }

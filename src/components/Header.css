@@ -115,13 +115,13 @@
 }
 
 .auth-button {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
     border: none;
     background-color: #2ed195;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.482);
     color: white;
 }
@@ -139,6 +139,8 @@
 }
 
 
+
+/* Media Queries */
 @media (min-width: 768px) {
     .nav-links {
         display: flex;
@@ -156,76 +158,5 @@
 
     .menu-icon {
         display: none;
-    }
-}
-
-/* Pantallas medianas (12.5 pulgadas) */
-@media (min-width: 1366px) {
-    .container {
-        padding: 0 3rem; 
-        font-size: 1.6rem; 
-    }
-
-    .auth-button {
-        padding: 0.6rem 1.2rem; 
-        font-size: 1.3rem; 
-    }
-
-    .menu-icon {
-        width: 28px; 
-        height: 22px; 
-    }
-
-    .figma-icon {
-        width: 2.8rem; 
-        height: 2.8rem; 
-    }
-
-    .nav-links {
-        top: 4.3rem;
-        right: 2.3rem; 
-    }
-
-    .nav-links li {
-        padding: 0.6rem 1.3rem; 
-    }
-
-    .auth-button {
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width: 1920px) {
-    .container {
-        padding: 0 4rem; 
-        font-size: 1.8rem;
-    }
-
-    .auth-button {
-        padding: 0.7rem 1.4rem; 
-        font-size: 1.4rem; 
-    }
-
-    .menu-icon {
-        width: 30px; 
-        height: 24px; 
-    }
-
-    .figma-icon {
-        width: 3rem; 
-        height: 3rem; 
-    }
-
-    .nav-links {
-        top: 4.5rem; 
-        right: 2.5rem; 
-    }
-
-    .nav-links li {
-        padding: 0.7rem 1.5rem; 
-    }
-
-    .auth-button {
-        font-size: 0.9rem;
     }
 }

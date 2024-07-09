@@ -2,16 +2,16 @@
   padding: 1rem 4rem 6rem 4rem;
   background-color: #fff;
   text-align: center;
-  position: relative; /* Añadido */
-  z-index: 1; /* Añadido */
+  position: relative; 
+  z-index: 1;
 }
 
 .goals::before {
   content: "";
-  background-image: url('../assets/goals.jpg'); /* Cambia la ruta a tu imagen de fondo */
+  background-image: url('../assets/goals.jpg'); 
   background-size: cover;
   background-position: center;
-  opacity: 0.5; /* Ajusta este valor para cambiar la opacidad */
+  opacity: 0.5; 
   position: absolute;
   top: 0;
   left: 0;
@@ -26,9 +26,9 @@
 }
 
 .goals p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 4rem;
-  color: rgba(0, 0, 0, 0.705);
+  color: rgba(0, 0, 0, 0.539);
 }
 
 .goals .goal-cards {

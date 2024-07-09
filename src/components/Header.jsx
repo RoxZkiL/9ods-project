@@ -46,10 +46,10 @@ const Header = () => {
               <a href="#">Inicio</a>
             </li>
             <li>
-              <a href="#">Importancia ODS9</a>
+              <a href="#">Importancia</a>
             </li>
             <li>
-              <a href="#">Cómo contribuir</a>
+              <a href="#">¿Cómo contribuir?</a>
             </li>
             <li>
               <a href="#">Testimonios</a>

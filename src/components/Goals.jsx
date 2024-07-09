@@ -42,7 +42,7 @@ const Goals = () => {
   return (
     <div className="goals">
       <h2>Metas</h2>
-      <p>¿Qué metas específicas busca la ODS 9?</p>
+      <p>¿Qué metas específicas busca el desarrollo sostenible?</p>
       <div className="goal-cards">
         {goalsData.map((goal, index) => (
           <div key={index} className="goal-card">

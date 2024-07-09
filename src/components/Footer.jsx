@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <p>ODS 9: Industria, Innovación e Infraestructura</p>
+        <p>Industria, Innovación e Infraestructura</p>
         <div className="social-icons">
           <a href="#" aria-label="Instagram">
             <FaInstagram />

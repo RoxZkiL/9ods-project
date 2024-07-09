@@ -7,6 +7,7 @@
     background-color: rgba(255, 255, 255, 0.608);
     padding: 2rem;
     height: auto; 
+    height: 100vh;
 }
 
 .img-div {
@@ -30,7 +31,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
     font-size: 1.2rem; 
     font-family: Calibri;
     width: 100%;

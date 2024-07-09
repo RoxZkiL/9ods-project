@@ -74,18 +74,21 @@
   @media (max-width: 768px) {
     .quote-card {
       width: 90%;
+      text-align: center;
     }
   }
   
   @media (min-width: 769px) and (max-width: 1024px) {
     .quote-card {
       width: 45%;
+      text-align: center;
     }
   }
   
   @media (min-width: 1025px) {
     .quote-card {
       width: 30%;
+      text-align: center;
     }
   }
   

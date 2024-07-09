@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
-import figmaIcon from "../assets/react.svg";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="left-section">
-          <img src={figmaIcon} alt="Figma Icon" className="figma-icon" />
+          <img src={logo} alt="Figma Icon" className="figma-icon" />
         </div>
         <div className="right-section">
           <div
@@ -49,7 +49,7 @@ const Header = () => {
               <a href="#">Importancia ODS9</a>
             </li>
             <li>
-              <a href="#">Como contribuir</a>
+              <a href="#">Cómo contribuir</a>
             </li>
             <li>
               <a href="#">Testimonios</a>

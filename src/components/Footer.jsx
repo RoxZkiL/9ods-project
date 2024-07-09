@@ -1,6 +1,6 @@
 import "./Footer.css";
 import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/react.svg";
+import logo from "../assets/logotipo-blanco.png";
 
 const Footer = () => {
   return (
@@ -11,16 +11,16 @@ const Footer = () => {
         </div>
         <p>ODS 9: Industria, Innovación e Infraestructura</p>
         <div className="social-icons">
-          <a href="https://instagram.com" aria-label="Instagram">
+          <a href="#" aria-label="Instagram">
             <FaInstagram />
           </a>
-          <a href="https://twitter.com" aria-label="Twitter">
+          <a href="#" aria-label="Twitter">
             <FaTwitter />
           </a>
-          <a href="https://youtube.com" aria-label="YouTube">
+          <a href="#" aria-label="YouTube">
             <FaYoutube />
           </a>
-          <a href="https://linkedin.com" aria-label="LinkedIn">
+          <a href="#" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>

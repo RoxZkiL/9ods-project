@@ -6,8 +6,7 @@
     border-bottom: 4px groove rgba(0, 0, 0, 0.159);
     background-color: rgba(255, 255, 255, 0.608);
     padding: 2rem;
-    height: 100vh; /* Ajusta para ocupar el 100% del viewport height */
-    box-sizing: border-box; /* Asegura que el padding se incluya en la altura total */
+    height: auto; 
 }
 
 .img-div {
@@ -15,13 +14,12 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    width: 100%;
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    width: 100%; 
 }
 
 .img-div img {
     max-width: 100%;
-    border-radius: 1rem;
+    border-radius: 1rem; 
     box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.472);
     transition: background-color 0.3s ease;
 }
@@ -32,20 +30,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-    font-size: 1.6rem; /* Ajusta el tamaño del texto */
+    text-align: justify;
+    font-size: 1.2rem; 
     font-family: Calibri;
     width: 100%;
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
 .heading-div legend {
     font-weight: 800;
-    font-size: 2rem; /* Ajusta el tamaño del texto */
-}
-
-.main-text p {
-    margin-bottom: 1rem;
 }
 
 /* Media Queries */
@@ -57,41 +49,67 @@
     }
 
     .img-div {
-        width: 50%;
+        width: 40%; 
     }
 
     .text-div {
         padding: 1rem;
-        font-size: 1.4rem; /* Ajusta el tamaño del texto */
+        font-size: 1.1rem; 
     }
 }
 
 @media (min-width: 1024px) {
-    .faq {
-        padding: 3rem;
-    }
-
     .img-div {
-        width: 50%;
+        width: 50%; 
     }
 
     .text-div {
-        padding: 1.5rem;
-        font-size: 1.6rem; /* Ajusta el tamaño del texto */
+        padding: 1rem;
+        font-size: 1.4rem; 
+    }
+}
+
+@media (min-width: 1280px) {
+    .faq {
+        padding: 2rem;
+    }
+
+    .img-div {
+        width: 45%; 
+    }
+
+    .text-div {
+        padding: 1rem;
+        font-size: 1.2rem; 
     }
 }
 
 @media (min-width: 1440px) {
     .faq {
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .img-div {
-        width: 50%;
+        width: 45%; 
     }
 
     .text-div {
         padding: 2rem;
-        font-size: 1.8rem; /* Ajusta el tamaño del texto */
+        font-size: 1.4rem; 
+    }
+}
+
+@media (min-width: 1920px) {
+    .faq {
+        padding: 4rem;
+    }
+
+    .img-div {
+        width: 40%; 
+    }
+
+    .text-div {
+        padding: 2rem;
+        font-size: 1.6rem; 
     }
 }

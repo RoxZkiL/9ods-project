@@ -160,3 +160,66 @@
         display: none;
     }
 }
+
+/* Pantallas medianas (12.5 pulgadas) */
+@media (min-width: 1366px) {
+    .container {
+        padding: 0 3rem; /* Ajusta el padding para pantallas medianas */
+        font-size: 1.6rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .auth-button {
+        padding: 0.6rem 1.2rem; /* Ajusta el tamaño de los botones */
+        font-size: 1.3rem; /* Ajusta el tamaño de la fuente de los botones */
+    }
+
+    .menu-icon {
+        width: 28px; /* Ajusta el tamaño del icono del menú */
+        height: 22px; /* Ajusta el tamaño del icono del menú */
+    }
+
+    .figma-icon {
+        width: 2.8rem; /* Ajusta el tamaño del icono de Figma */
+        height: 2.8rem; /* Ajusta el tamaño del icono de Figma */
+    }
+
+    .nav-links {
+        top: 4.3rem; /* Ajusta la posición del menú desplegable */
+        right: 2.3rem; /* Ajusta la posición del menú desplegable */
+    }
+
+    .nav-links li {
+        padding: 0.6rem 1.3rem; /* Ajusta el padding de los enlaces del menú */
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        padding: 0 4rem; /* Aumenta el padding para pantallas grandes */
+        font-size: 1.8rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    .auth-button {
+        padding: 0.7rem 1.4rem; /* Aumenta el tamaño de los botones */
+        font-size: 1.4rem; /* Aumenta el tamaño de la fuente de los botones */
+    }
+
+    .menu-icon {
+        width: 30px; /* Aumenta el tamaño del icono del menú */
+        height: 24px; /* Aumenta el tamaño del icono del menú */
+    }
+
+    .figma-icon {
+        width: 3rem; /* Aumenta el tamaño del icono de Figma */
+        height: 3rem; /* Aumenta el tamaño del icono de Figma */
+    }
+
+    .nav-links {
+        top: 4.5rem; /* Ajusta la posición del menú desplegable */
+        right: 2.5rem; /* Ajusta la posición del menú desplegable */
+    }
+
+    .nav-links li {
+        padding: 0.7rem 1.5rem; /* Aumenta el padding de los enlaces del menú */
+    }
+}

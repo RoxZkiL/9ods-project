@@ -1,19 +1,19 @@
-import img1 from "../../../assets/cecilia-goya-de-rivello.jpg";
-import img2 from "../../../assets/kofi-annan.jpg";
-import img3 from "../../../assets/al-gore.jpg";
-import img4 from "../../../assets/indra-nooy.jpg";
+import img1 from "../../../assets/LandingPage/Quotes/cecilia-goya-de-rivello.jpg";
+import img2 from "../../../assets/LandingPage/Quotes/kofi-annan.jpg";
+import img3 from "../../../assets/LandingPage/Quotes/al-gore.jpg";
+import img4 from "../../../assets/LandingPage/Quotes/indra-nooy.jpg";
 
 const quotes = [
   {
     name: "Cecilia Goya de Rivello",
-    quote: `“Ser sustentable no es sólo lavar las culpas ni sólo cuidar el medio ambiente, sino ser socialmente justo, responsable con el ambiente y, por lo tanto, también económicamente viable.",
-    job: "Ceo Sustentable”`,
+    quote: `“Ser sustentable no es sólo lavar las culpas ni sólo cuidar el medio ambiente, sino ser socialmente justo, responsable con el ambiente y, por lo tanto, también económicamente viable.”`,
+    job: "Ceo Sustentable",
     img: img1,
   },
   {
     name: "Kofi Annan",
-    quote: `“Hay un nuevo entendimiento universal de que las fuerzas de mercado son esenciales para el desarrollo sostenible.",
-    job: "Ex Secretario ONU”`,
+    quote: `“Hay un nuevo entendimiento universal de que las fuerzas de mercado son esenciales para el desarrollo sostenible.”`,
+    job: "Ex Secretario ONU",
     img: img2,
   },
   {
@@ -24,8 +24,8 @@ const quotes = [
   },
   {
     name: "Indra Nooyi",
-    quote: `“Un negocio no puede tener éxito en una sociedad que fracasa. Por eso debemos ser parte de la solución a los problemas sociales y ambientales.",
-    job: "Ex CEO de PepsiCo”`,
+    quote: `“Un negocio no puede tener éxito en una sociedad que fracasa. Por eso debemos ser parte de la solución a los problemas sociales y ambientales.”`,
+    job: "Ex CEO de PepsiCo",
     img: img4,
   },
 ];

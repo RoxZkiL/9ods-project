@@ -1,5 +1,5 @@
 import "./styles/FAQ.css";
-import img from "../../assets/faqimg.jpg";
+import img from "../../assets/LandingPage/FAQ/faqimg.jpg";
 import text from "./utils/FAQ";
 
 export const FAQ = () => {

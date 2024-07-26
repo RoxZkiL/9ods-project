@@ -8,7 +8,7 @@
 
 .goals::before {
   content: "";
-  background-image: url('../assets/goals.jpg'); 
+  background-image: url('src/assets/LandingPage/Goals/goals.jpg'); 
   background-size: cover;
   background-position: center;
   opacity: 0.5; 

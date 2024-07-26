@@ -1,6 +1,6 @@
 import "./styles/Main.css";
 import { useEffect, useRef } from "react";
-import transparentVideo from "../../assets/video.mp4";
+import transparentVideo from "../../assets/LandingPage/Main/video.mp4";
 
 const Main = () => {
   const videoRef = useRef(null);

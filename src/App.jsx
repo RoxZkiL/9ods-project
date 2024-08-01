@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/Inicio" />} />
-        <Route path="/Inicio" element={<LandingPage />} />
+        <Route path="/inicio" element={<LandingPage />} />
       </Routes>
     </Router>
   );

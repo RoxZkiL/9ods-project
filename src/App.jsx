@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./components/LandingPage/LandingPage";
-import Importancia from "./components/Importancia/Importancia";
+import Importance from "./components/Importancia/Importance";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/inicio" />} />
         <Route path="/inicio" element={<LandingPage />} />
-        <Route path="/importancia" element={<Importancia />} />
+        <Route path="/importancia" element={<Importance />} />
       </Routes>
     </Router>
   );

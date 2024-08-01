@@ -1,0 +1,38 @@
+/* RelevanciaGlobal.css */
+.relevancia-global-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 7rem;
+  }
+  
+  .text-section {
+    flex: 1;
+    border: 3px solid rgba(79, 150, 117, 0.902);
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 0;
+    color: rgba(52, 114, 78, 0.677);
+  }
+
+  .info-text {
+    color: rgba(0, 0, 0, 0.607);
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  

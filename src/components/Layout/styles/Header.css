@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    height: 5rem;
+    height: 4rem;
     font-size: 1.4rem;
     font-weight: 400;
     box-sizing: border-box;
@@ -36,6 +36,7 @@
 .right-section {
     display: flex;
     align-items: center;
+    gap: 1rem; /* Espacio entre los elementos de la derecha */
 }
 
 .menu-icon {
@@ -71,8 +72,12 @@
     list-style: none;
     display: none;
     flex-direction: column;
+    gap: 0.5rem; /* Reducir espacio entre los elementos */
     position: absolute;
+    top: 4rem;
+    right: 2rem;
     background-color: #f0fdf4;
+    padding: 0.5rem;
     transform-origin: top;
     transition: transform 0.3s ease;
     z-index: 999;
@@ -106,8 +111,8 @@
 
 .auth-buttons {
     display: flex;
-    gap: 0.5rem;
-    margin-left: 1.5rem;
+    gap: 0.5rem; /* Reducir espacio entre los botones */
+    margin-left: 1rem;
 }
 
 .auth-button {
@@ -116,10 +121,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 0.3rem;
-    font-size: 5rem;
+    font-size: 1.1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.482);
     color: white;
-    font-weight: bold;
 }
 
 .auth-button.login {
@@ -139,30 +143,34 @@
 }
 
 /* Media Queries */
+
+/* Pantallas de 821px y menores */
 @media (max-width: 821px) {
     .container {
-        padding: 0 1rem;
-        font-size: 1.2rem;
+        padding: 0 1rem; /* Reducir padding para pantallas más pequeñas */
+        font-size: 1.2rem; /* Ajustar el tamaño de fuente */
     }
 
     .nav-links {
-        right: 1rem;
-        gap: 0.2rem;
+        right: 1rem; /* Ajustar la posición */
+        gap: 0.5rem; /* Reducir el gap entre los elementos */
     }
 
     .nav-links li {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem; /* Ajustar el padding */
     }
 
     .auth-buttons {
-        display: flex;
-        font-size: 0.9rem;
+        display: flex; /* Asegurarse de que los botones sean visibles */
+        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
     }
 
     .auth-button {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
+        padding: 0.3rem 0.6rem; /* Ajustar el padding */
     }
 
+    /* Mostrar el menú de navegación para pantallas pequeñas */
     .menu-icon {
         display: flex;
     }
@@ -170,20 +178,21 @@
 
 @media (min-width: 822px) and (max-width: 948px) {
     .nav-links {
-        right: 1rem;
-        gap: 0.2rem;
+        right: 1rem; /* Ajustar la posición */
+        gap: 0.5rem; /* Reducir el gap entre los elementos */
     }
 
     .nav-links li {
-        padding: 0.4rem 0.8rem;
+        padding: 0.4rem 0.8rem; /* Ajustar el padding */
     }
 
     .auth-buttons {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
     }
 
     .auth-button {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
+        padding: 0.3rem 0.6rem; /* Ajustar el padding */
     }
 }
 
@@ -196,14 +205,18 @@
         box-shadow: none;
         padding: 0;
         transform: none;
-        gap: 0.2rem;
     }
 
     .menu-icon {
         display: none;
     }
 
+    .auth-buttons {
+        font-size: 0.8rem;
+    }
+
     .auth-button {
-        font-size: 1.04rem;
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
     }
 }

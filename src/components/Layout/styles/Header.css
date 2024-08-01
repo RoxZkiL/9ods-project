@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    height: 4rem;
+    height: 4.5rem;
     font-size: 1.4rem;
     font-weight: 400;
     box-sizing: border-box;
@@ -111,7 +111,7 @@
 
 .auth-buttons {
     display: flex;
-    gap: 0.5rem; /* Reducir espacio entre los botones */
+    gap: 0.5rem;
     margin-left: 1rem;
 }
 
@@ -143,34 +143,31 @@
 }
 
 /* Media Queries */
-
-/* Pantallas de 821px y menores */
 @media (max-width: 821px) {
     .container {
-        padding: 0 1rem; /* Reducir padding para pantallas más pequeñas */
-        font-size: 1.2rem; /* Ajustar el tamaño de fuente */
+        padding: 0 1rem;
+        font-size: 1.2rem;
     }
 
     .nav-links {
-        right: 1rem; /* Ajustar la posición */
-        gap: 0.5rem; /* Reducir el gap entre los elementos */
+        right: 1rem;
+        gap: 0.5rem;
     }
 
     .nav-links li {
-        padding: 0.5rem 0.5rem; /* Ajustar el padding */
+        padding: 0.5rem 0.5rem;
     }
 
     .auth-buttons {
-        display: flex; /* Asegurarse de que los botones sean visibles */
-        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
+        display: flex;
+        font-size: 0.9rem;
     }
 
     .auth-button {
-        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
-        padding: 0.3rem 0.6rem; /* Ajustar el padding */
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
     }
 
-    /* Mostrar el menú de navegación para pantallas pequeñas */
     .menu-icon {
         display: flex;
     }
@@ -179,20 +176,19 @@
 @media (min-width: 822px) and (max-width: 948px) {
     .nav-links {
         right: 1rem; /* Ajustar la posición */
-        gap: 0.5rem; /* Reducir el gap entre los elementos */
     }
 
     .nav-links li {
-        padding: 0.4rem 0.8rem; /* Ajustar el padding */
+        padding: 0.4rem 0.8rem;
     }
 
     .auth-buttons {
-        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
+        font-size: 0.9rem;
     }
 
     .auth-button {
-        font-size: 0.9rem; /* Ajustar el tamaño de fuente */
-        padding: 0.3rem 0.6rem; /* Ajustar el padding */
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
     }
 }
 

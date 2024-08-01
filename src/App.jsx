@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/Inicio" />} />
+        <Route path="/" element={<Navigate to="/inicio" />} />
         <Route path="/inicio" element={<LandingPage />} />
       </Routes>
     </Router>

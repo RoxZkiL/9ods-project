@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./components/LandingPage/LandingPage";
-import Importance from "./components/Importancia/Importance";
+import Importance from "./components/Importance/Importance";
 
 function App() {
   return (

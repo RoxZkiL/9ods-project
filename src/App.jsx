@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Importance from "./components/Importance/Importance";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Navigate to="/inicio" />} />
         <Route path="/inicio" element={<LandingPage />} />
         <Route path="/importancia" element={<Importance />} />
+        <Route path="/registro" element={<Register />} />
       </Routes>
     </Router>
   );

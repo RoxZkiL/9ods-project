@@ -25,6 +25,13 @@ const RegisterForm = () => {
             </div>
             <div className="form-group">
               <input
+                type="email"
+                className="form-input"
+                placeholder="Confirma tu email..."
+              />
+            </div>
+            <div className="form-group">
+              <input
                 type="password"
                 className="form-input"
                 placeholder="Ingresa tu contraseña..."

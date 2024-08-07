@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./styles/Header.css";
 import logo from "../../assets/Layout/Header/logo.png";
+import navBarLinks from "./utils/Header";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,16 +13,11 @@ const Header = () => {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
+    setIsScrolled(window.scrollY > 0);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -30,7 +27,9 @@ const Header = () => {
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="left-section">
-          <img src={logo} alt="Figma Icon" className="figma-icon" />
+          <Link to="/Inicio">
+            <img src={logo} alt="Logo ODS9" className="figma-icon" />
+          </Link>
         </div>
         <div className="right-section">
           <div
@@ -42,31 +41,19 @@ const Header = () => {
             <div className="bar"></div>
           </div>
           <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-            <li>
-              <a href="#">Inicio</a>
-            </li>
-            <li>
-              <a href="#">Importancia</a>
-            </li>
-            <li>
-              <a href="#">¿Cómo contribuir?</a>
-            </li>
-            <li>
-              <a href="#">Testimonios</a>
-            </li>
-            <li>
-              <a href="#">Nosotros</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contacto</a>
-            </li>
+            {navBarLinks.map((link, index) => (
+              <Link className="no-decoration" to={link.path} key={index}>
+                <li>{link.name}</li>
+              </Link>
+            ))}
           </ul>
           <div className={`auth-buttons ${isMenuOpen ? "open" : ""}`}>
-            <button className="auth-button">Log in</button>
-            <button className="auth-button">Registro</button>
+            <Link to="/login">
+              <button className="auth-button login">Log in</button>
+            </Link>
+            <Link to="/registro">
+              <button className="auth-button register">Registro</button>
+            </Link>
           </div>
         </div>
       </div>

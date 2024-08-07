@@ -1,10 +1,12 @@
-import "./App.css";
-import LandingPage from "./components/LandingPage/LandingPage";
+
+import AllCollapseExample from "./components/ComoContribuir/Accordion";
+
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+   
+      <AllCollapseExample/>
     </div>
   );
 }

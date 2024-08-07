@@ -6,17 +6,29 @@ const Formulario = () => {
     <div className='fondo'>
     <div className="form-container">
     <div className="info-column">
-      <h2>Contacto</h2>
+      <h1 className='texto'>Contacto</h1>
       <p>Dirección: Santiago, Chile</p>
       <p>Redes Sociales:</p>
-      <ul>
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://www.twitter.com">Twitter</a></li>
-        <li><a href="https://www.instagram.com">Instagram</a></li>
+      <ul style={{ listStyle: 'none', padding: 0 }}>
+        <li style={{ display: 'inline', marginRight: 10 }}>
+          <a href="https://www.facebook.com" style={{ textDecoration: 'none', color: 'black', fontSize: '24px' }}>
+            <img src="https://img.icons8.com/?size=100&id=435&format=png&color=1A1A1A" alt="Facebook" width="24" height="24" />
+          </a>
+        </li>
+        <li style={{ display: 'inline', marginRight: 10 }}>
+          <a href="https://x.com/" style={{ textDecoration: 'none', color: 'black', fontSize: '24px' }}>
+            <img src="https://img.icons8.com/?size=100&id=6Fsj3rv2DCmG&format=png&color=1A1A1A" alt="X" width="24" height="24" />
+          </a>
+        </li>
+        <li style={{ display: 'inline', marginRight: 10 }}>
+          <a href="https://www.instagram.com" style={{ textDecoration: 'none', color: 'black', fontSize: '24px' }}>
+            <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=1A1A1A" alt="Instagram" width="24" height="24" />
+          </a>
+        </li>
       </ul>
     </div>
     <div className="form-column">
-      <h2>Envía tu mensaje</h2>
+      <h2 className='texto'>Envía tu mensaje</h2>
       <form>
         <div className="form-group">
           <label htmlFor="name">Nombre</label>

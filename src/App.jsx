@@ -9,6 +9,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import Importance from "./components/Importance/Importance";
 import Register from "./components/Forms/RegisterForm/Register";
 import Login from "./components/Forms/LoginForm/Login";
+import News from "./components/News/News";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/importancia" element={<Importance />} />
         <Route path="/registro" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/noticias" element={<News />} />
       </Routes>
     </Router>
   );

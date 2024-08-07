@@ -1,0 +1,82 @@
+.main-containernews {
+    padding: 1rem 4rem 6rem 4rem;
+    background-color: #fff;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+    height: 70vh;
+    display: flex;
+    flex-direction: column; /* Añadido */
+    align-items: center;
+    justify-content: center;
+    background: rgba(45, 56, 51, 0.87);  
+  }
+  
+  .main-containernews::before {
+    content: "";
+    background-image: url('../../../assets/Importance/TitleImage/solar-4478105_1920.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .title-textnews {
+    color: #fff;
+    font-size: 5.5rem;
+    margin-bottom: 1rem; /* Añadido */
+  }
+  
+  /* Media queries */
+  @media (max-width: 575px) {
+    .main-containernews {
+      padding: 1rem 2rem 4rem 2rem;
+      height: 50vh;
+    }
+    
+    .title-textnews {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+    .main-containernews {
+      padding: 1rem 3rem 5rem 3rem;
+      height: 60vh;
+    }
+    
+    .title-textnews {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .main-containernews {
+      padding: 1rem 4rem 6rem 4rem;
+      height: 70vh;
+    }
+    
+    .title-textnews {
+      font-size: 4.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .main-containernews {
+      padding: 1rem 4rem 6rem 4rem;
+      height: 70vh;
+    }
+    
+    .title-textnews {
+      font-size: 5.5rem;
+    }
+  }
+
+  .subtitle {
+    color: #dadada;
+  }

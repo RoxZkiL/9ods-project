@@ -42,9 +42,9 @@ const Header = () => {
           </div>
           <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
             {navBarLinks.map((link, index) => (
-              <li key={index}>
-                <Link to={link.path}>{link.name}</Link>
-              </li>
+              <Link className="no-decoration" to={link.path} key={index}>
+                <li>{link.name}</li>
+              </Link>
             ))}
           </ul>
           <div className={`auth-buttons ${isMenuOpen ? "open" : ""}`}>

@@ -1,5 +1,5 @@
 const navBarLinks = [
-  { name: "Inicio", path: "/inicio" },
+  { name: "Inicio", path: "/" },
   { name: "Importancia", path: "/importancia" },
   { name: "¿Cómo Contribuir?", path: "/contribuir" },
   { name: "Noticias", path: "/noticias" },

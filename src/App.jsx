@@ -7,14 +7,16 @@ import {
 import "./App.css";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Contacto from "./components/Contacto/Contacto";
+import Importance from "./components/Importance/Importance";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/Inicio" />} />
-        <Route path="/Inicio" element={<LandingPage />} />
-        <Route path="/Contacto" element={<Contacto/>} />
+        <Route path="/" element={<Navigate to="/inicio" />} />
+        <Route path="/inicio" element={<LandingPage />} />
+        <Route path="/importancia" element={<Importance />} />
+        <Route path="/Contacto" element={<Contacto />} />
       </Routes>
     </Router>
   );

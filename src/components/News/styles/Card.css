@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px; /* Puedes ajustar el tamaño según tus necesidades */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px; /* Puedes ajustar el tamaño según tus necesidades */
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .card-message {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  

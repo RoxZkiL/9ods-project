@@ -1,0 +1,27 @@
+.main-news {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cards-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.container-news {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.main-tittle {
+  margin-left: 120px;
+  color: rgb(33, 187, 136);
+}
+
+.more-news {
+  margin-left: 120px;
+  color: rgb(33, 187, 136);
+}

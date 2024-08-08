@@ -4,7 +4,7 @@
     text-align: center;
     position: relative; 
     z-index: 1;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column; /* Añadido */
     align-items: center;
@@ -79,4 +79,5 @@
 
   .subtitle {
     color: #dadada;
+    font-size: xx-large;
   }

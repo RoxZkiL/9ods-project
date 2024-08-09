@@ -9,11 +9,12 @@ const AboutUs = () => {
   return ( 
     
     <>
-    <header/>
+    <Header/>
     <SobreNosotros/>
     <MiembroDelEquipo/>
     <EquipoDeTrabajo/>
-    <footer/>
+    <Footer/>
+ 
     </>
 
   )

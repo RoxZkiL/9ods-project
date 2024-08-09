@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Importance from "./components/Importance/Importance";
 import Register from "./components/Forms/RegisterForm/Register";
 import Login from "./components/Forms/LoginForm/Login";
+import AboutUs from "./components/Nosotros/AboutUs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/registro" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contacto" element={<Contact />} />
+        <Route path="/nosotros" element={<AboutUs />} />
       </Routes>
     </Router>
   );

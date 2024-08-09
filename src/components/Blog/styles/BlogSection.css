@@ -89,13 +89,14 @@
     .tip-title {
       font-size: 1.25rem;
        margin-top: 3rem;
+       padding: 2rem;
     }
   }
   
   @media (max-width: 800px) {
     .blog-section-container {
       grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
-      padding: 2rem;
+      padding: 3rem;
     }
   
     .tip-image {
@@ -104,6 +105,7 @@
     }
   
     .tip-title {
+      padding: 3rem;
       font-size: 1rem;
       margin-top: 3rem;
     }

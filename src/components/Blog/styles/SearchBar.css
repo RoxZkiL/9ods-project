@@ -10,7 +10,7 @@
 
 .searchbar-title {
     margin: 0 0 1rem 0;
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: #2ed195;
     text-transform: uppercase;
     font-weight: bold;
@@ -19,7 +19,7 @@
 
 .searchbar-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .searchbar-wrapper {
@@ -36,7 +36,7 @@
 
 .searchbar {
     flex: 1;
-    height: 42px;
+    height: 4rem;
     border: none;
     font-size: 1.5rem;
     color: #4a4a4a;

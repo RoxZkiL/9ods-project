@@ -12,8 +12,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 1rem;
+    padding: 2rem;
     text-align: center;
     box-sizing: border-box;
     background-color: rgba(240, 255, 251, 0.834);
@@ -23,7 +23,7 @@
   }
   
   .tip-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   }
   
@@ -31,18 +31,18 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 3px solid #34d399bd;
+    border: 2px inset #34d399bd;
     object-fit: cover;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
   }
   
   .tip-card:hover .tip-image {
-    transform: scale(1.02); 
+    transform: scale(1.04); 
   }
   
   .tip-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #34d399bd;
     font-weight: bold;
   }

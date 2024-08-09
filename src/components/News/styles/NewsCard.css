@@ -1,45 +1,68 @@
 .news-card {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    height: 350px;
-    max-width: 1000px; /* Puedes ajustar el tamaño según tus necesidades */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    transition: transform 0.2s;
-  }
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px; /* Tamaño máximo de la tarjeta */
+  height: auto; /* Ajustar la altura automáticamente según el contenido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  transition: transform 0.2s;
+}
 
-  .news-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .news-card-image img {
-    width: 600px;
-    height: 350px;
-    object-fit: cover;
-  }
-  
-  .news-card-content {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .news-card-title {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
-  .news-card-subtitle {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    color: #777;
-  }
-  
-  .news-card-info {
-    font-size: 1rem;
-    color: #555;
-  }
+.news-card:hover {
+  transform: scale(1.05);
+}
+
+/* Cambiar para que el contenedor de la imagen tenga tamaño fijo */
+.news-card-image {
+  width: 500px; /* Ancho fijo para la imagen */
+  height: 350px; /* Alto fijo para la imagen */
+  overflow: hidden;
+  flex-shrink: 0; /* Evita que el contenedor de la imagen se reduzca */
+}
+
+.news-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.news-card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.news-card-subtitle {
+  font-size: 1,2rem;
+  margin: 0.1rem 0;
+  color: #777;
+}
+
+.news-card-info {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem; /* Añadir espacio debajo del texto */
+}
+
+.news-card-mini-subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #888;
+  font-weight: 300; /* Letras finas */
+  margin-bottom: 1rem;
+}
+
+.news-card-date,
+.news-card-topic {
+  font-style: italic;
+}

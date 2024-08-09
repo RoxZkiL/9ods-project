@@ -1,14 +1,12 @@
-import Footer from "../Layout/Footer"
-import Header from "../Layout/Header"
-import AllCollapseExample from "./AllCollapseExample"
 
+import AllCollapseExample from "./AllCollapseExample"
+import Header from "../Layout/Header"
 
 const HowToContribute = () => {
   return (
 	<>
 	<Header/>
 	<AllCollapseExample/>
-	<Footer/>
 	</>
   )
 }

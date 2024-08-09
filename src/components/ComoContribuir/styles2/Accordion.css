@@ -1,0 +1,81 @@
+.accordion-header {
+    background-color: #ffffff;
+    padding: 0;
+    position: relative; /* Permite el posicionamiento absoluto del contenido dentro */
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header-image-wrapper {
+    position: relative; /* Contenedor para la imagen y el texto */
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+    width: 100%;
+}
+
+.header-image {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto;
+    filter: hue-rotate(15deg) brightness(80%) opacity(90%)
+}
+
+.header-text {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto */
+    color: #fff; /* Color del texto */
+    font-size: 4rem; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad sobre la imagen */
+}
+
+.accordion-header h1 {
+    margin: 0;
+    color: transparent; /* Oculta el texto del encabezado si se superpone con el texto de la imagen */
+}
+
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.accordion-image {
+    width: 150px;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 10px;
+}
+
+.accordion-text {
+    flex: 1;
+}
+
+.custom-accordion {
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.custom-accordion .accordion-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: #0056b3;
+}
+
+.custom-accordion .accordion-body {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 15px; /* Ajusta el padding interno del cuerpo del acordeón */
+    max-width: 50%; /* Ajusta el ancho máximo para que sea más pequeño */
+    margin: 0 auto; 
+}

@@ -5,7 +5,7 @@
     flex-direction: column;
     height: 30vh;
     gap: 3rem;
-    padding: 0 1rem; /* Añade padding para asegurarte de que el contenido no quede pegado a los bordes en pantallas pequeñas */
+    padding: 2rem 1rem;
 }
 
 .searchbar-title {

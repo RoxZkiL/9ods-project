@@ -1,19 +1,33 @@
+/* eslint-disable react/prop-types */
 // BlogSection.js
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/BlogSection.css";
 import tips from "./utils/BlogSection";
 import Pagination from "./Pagination";
 
-const BlogSection = () => {
+const BlogSection = ({ search }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [filteredTips, setFilteredTips] = useState(tips);
   const tipsPerPage = 6;
-  const totalTips = tips.length;
-  const totalPages = Math.ceil(totalTips / tipsPerPage);
+
+  //Filtrado de la searchbar
+  useEffect(() => {
+    const simulatedApiPetition = setTimeout(() => {
+      const filterTips = tips.filter((tip) =>
+        tip.title.toLowerCase().includes(search.toLowerCase())
+      );
+      setFilteredTips(filterTips);
+    }, 500); // Simula un retraso en la "petición API"
+
+    return () => clearTimeout(simulatedApiPetition);
+  }, [search]);
 
   // Calcular el índice de los elementos a mostrar en la página actual
   const indexOfLastTip = currentPage * tipsPerPage;
   const indexOfFirstTip = indexOfLastTip - tipsPerPage;
-  const currentTips = tips.slice(indexOfFirstTip, indexOfLastTip);
+  const currentTips = filteredTips.slice(indexOfFirstTip, indexOfLastTip);
+
+  const totalPages = Math.ceil(filteredTips.length / tipsPerPage);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 

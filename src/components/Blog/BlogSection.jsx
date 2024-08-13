@@ -14,14 +14,10 @@ const BlogSection = ({ search }) => {
 
   //Filtrado de la searchbar
   useEffect(() => {
-    const simulatedApiPetition = setTimeout(() => {
-      const filterTips = tips.filter((tip) =>
-        tip.title.toLowerCase().includes(search.toLowerCase())
-      );
-      setFilteredTips(filterTips);
-    }, 500); // Simula un retraso en la "petición API"
-
-    return () => clearTimeout(simulatedApiPetition);
+    const filterTips = tips.filter((tip) =>
+      tip.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setFilteredTips(filterTips);
   }, [search]);
 
   // Calcular el índice de los elementos a mostrar en la página actual

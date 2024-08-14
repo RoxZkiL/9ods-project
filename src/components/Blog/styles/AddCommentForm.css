@@ -4,26 +4,26 @@
   align-items: center;
   margin-top: 1rem;
   width: 100%;
-  height: auto; /* Ajusta la altura automáticamente */
-  padding: 0 1rem; /* Añade padding lateral para pantallas pequeñas */
+  height: auto; 
+  padding: 0 1rem; 
   box-sizing: border-box;
 }
 
 .comment-form-wrapper {
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.471);
-  width: 50%; /* Ancho original para pantallas grandes */
-  max-width: 600px; /* Limita el ancho máximo a 600px */
+  width: 50%; 
+  max-width: 600px; 
   padding: 1.5rem;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(237, 234, 234);
   border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box; /* Incluye padding en el ancho total */
+  box-sizing: border-box;
 }
 
 .comment-textarea {
-  background-color: rgb(226, 245, 235);
+  background-color: rgb(247, 247, 247);
   width: 100%;
   padding: 0.7rem;
   font-size: 16px;
@@ -73,8 +73,8 @@
 /* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
   .comment-form-wrapper {
-    width: 90%; /* Reduce el ancho al 90% */
-    max-width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    width: 90%; 
+    max-width: 100%; 
     padding: 1rem;
   }
 
@@ -86,12 +86,12 @@
 
 @media (max-width: 480px) {
   .comment-form-wrapper {
-    width: 100%; /* Ocupa todo el ancho */
+    width: 100%; 
     padding: 1rem;
   }
 
   .comment-textarea {
-    height: 5rem; /* Ajusta la altura del textarea en pantallas pequeñas */
+    height: 5rem;
   }
 
   .comment-button {

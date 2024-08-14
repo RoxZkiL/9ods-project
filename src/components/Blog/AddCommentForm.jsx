@@ -10,11 +10,11 @@ const AddCommentForm = ({ onAddComment }) => {
     if (comment.trim() === "") return;
 
     onAddComment(comment);
-    setComment(""); // Limpiar el textarea después de agregar el comentario
+    setComment("");
   };
 
   const handleClear = () => {
-    setComment(""); // Limpiar el textarea sin agregar comentario
+    setComment("");
   };
 
   return (

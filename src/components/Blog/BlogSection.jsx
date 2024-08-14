@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// BlogSection.js
 import { useEffect, useState } from "react";
 import "./styles/BlogSection.css";
 import tips from "./utils/BlogSection";

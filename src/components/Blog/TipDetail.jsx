@@ -17,12 +17,11 @@ const TipDetail = () => {
 
   const handleAddComment = (text) => {
     const newComment = {
-      id: comments.length + 1, // ID único basado en la longitud actual del array
-      author: "Usuario Anónimo", // Puedes cambiar esto si tienes un sistema de autenticación
+      id: comments.length + 1,
+      author: "Usuario Anónimo",
       text: text,
-      avatar: "ruta-a-la-imagen-por-defecto.png", // Puedes cambiar la ruta a una imagen de avatar por defecto
+      avatar: "https://picsum.photos/50/50",
     };
-
     setComments([newComment, ...comments]); // Añade el nuevo comentario al inicio de la lista
   };
 

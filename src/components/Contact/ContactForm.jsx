@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Styles/ContactForm.css";
@@ -13,13 +14,11 @@ const ContactForm = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Función para validar si el email es válido
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
   };
 
-  // Función para manejar el cambio de los campos del formulario
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -28,12 +27,10 @@ const ContactForm = () => {
     });
   };
 
-  // Función para manejar el envío del formulario
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     setError(null);
 
-    // Validaciones antes de enviar
     if (!formData.nombre || !formData.email || !formData.mensaje) {
       setError("Todos los campos son obligatorios.");
       return;
@@ -53,35 +50,38 @@ const ContactForm = () => {
       from_email: formData.email,
     };
 
-    emailjs
-      .send(
-        "service_rom4905",
-        "template_qqv8qyg",
+    try {
+      console.log("Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+      console.log("Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+      console.log("User ID:", import.meta.env.VITE_EMAILJS_USER_ID);
+
+      const result = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         templateParams,
-        "nJhcqegT_cTuLOzAx"
-      )
-      .then(
-        (result) => {
-          console.log("Correo enviado:", result.text);
-          setIsModalVisible(true);
-          setTimeout(() => {
-            setIsModalVisible(false);
-            setIsSubmitting(false);
-          }, 3000);
-        },
-        (error) => {
-          setError("Hubo un error al enviar el correo.");
-          console.error("Error al enviar correo:", error.text);
-        }
-      )
-      .finally(() => {
-        setLoading(false);
-        setFormData({
-          nombre: "",
-          email: "",
-          mensaje: "",
-        });
+        import.meta.env.VITE_EMAILJS_USER_ID
+      );
+
+      console.log("Correo enviado:", result.text);
+      setIsModalVisible(true);
+
+      setTimeout(() => {
+        setIsModalVisible(false);
+        setIsSubmitting(false);
+      }, 3000);
+    } catch (error) {
+      const errorMessage =
+        error?.text || "Error desconocido al enviar el correo.";
+      setError(errorMessage);
+      console.error("Error al enviar correo:", errorMessage);
+    } finally {
+      setLoading(false);
+      setFormData({
+        nombre: "",
+        email: "",
+        mensaje: "",
       });
+    }
   };
 
   return (

@@ -11,15 +11,7 @@ const ContactForm = () => {
           <p>Generation Chile, Innovación y Tecnología</p>
           <h3>Conéctate con Nosotros</h3>
           <div className="social-icons">
-            <a href="#">
-              <img
-                src="https://img.icons8.com/?size=100&id=435&format=png&color=1A1A1A"
-                alt="Facebook"
-                width="30"
-                height="30"
-              />
-            </a>
-            <a href="#">
+            <a href="https://x.com/CounterLogicCod" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://img.icons8.com/?size=100&id=6Fsj3rv2DCmG&format=png&color=1A1A1A"
                 alt="X"
@@ -27,7 +19,7 @@ const ContactForm = () => {
                 height="30"
               />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/counterlogiccoding?igsh=MXZudjdiYXdwcHdrNA==" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://img.icons8.com/?size=100&id=32292&format=png&color=1A1A1A"
                 alt="Instagram"
@@ -35,7 +27,7 @@ const ContactForm = () => {
                 height="30"
               />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/counter-logic-coding/" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://img.icons8.com/?size=100&id=447&format=png&color=000000"
                 alt="LinkedIn"

@@ -36,3 +36,27 @@ body {
     font-size: 24px;
     color: white;
   }
+  .icon {
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px; /* Opcional: agrega un padding para que el borde se vea mejor */
+    border: 1px solid #000; /* Opcional: agrega un borde */
+  }
+     /* Estilo inicial del elemento */
+     .mi-elemento {
+      background-color: #3498db;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+      margin: 0 auto;
+      transition: background-color 0.3s ease; /* Para suavizar el cambio */
+  }
+
+  /* Estilo cuando se hace hover */
+  .mi-elemento:hover {
+      background-color: #2ecc71;
+  }
+  .icono:hover {
+    transform: scale(1.1);
+  }

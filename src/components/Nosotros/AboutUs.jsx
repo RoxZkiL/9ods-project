@@ -1,7 +1,7 @@
 
-import SobreNosotros from "./SobreNosotros"
-import EquipoDeTrabajo from "./EquipoDeTrabajo"
-import MiembroDelEquipo from "./MiembroDelEquipo"
+import Mission from "./Mission"
+import MeetTheTeam from "./MeetTheTeam"
+import TitleImageNosotros from "./TitleImageNosotros"
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
 
@@ -9,11 +9,13 @@ const AboutUs = () => {
   return ( 
     
     <>
-    <header/>
-    <SobreNosotros/>
-    <MiembroDelEquipo/>
-    <EquipoDeTrabajo/>
-    <footer/>
+    <Header/>
+    <TitleImageNosotros/>
+    <Mission/>
+    
+    <MeetTheTeam/>
+    <Footer/>
+ 
     </>
 
   )

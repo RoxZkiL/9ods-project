@@ -1,8 +1,8 @@
 
-const SobreNosotros = () => {
+const Mission = () => {
   return (
     <section style={{ textAlign: 'center', padding: '20px' }}>
-      <h2>Sobre Nosotros</h2>
+      <h2 style={{ marginTop: '100px', color: 'rgb(71, 177, 127)' }}>Sobre Nosotros</h2>
       <p>
         El desarrollo sostenible representa la transición de la sociedad actual
         a una sociedad más respetuosa con el medio ambiente. Es un modo de
@@ -14,4 +14,4 @@ const SobreNosotros = () => {
   );
 };
 
-export default SobreNosotros;
+export default Mission;

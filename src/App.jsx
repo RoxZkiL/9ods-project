@@ -13,6 +13,7 @@ import Login from "./components/Forms/LoginForm/Login";
 import Blog from "./components/Blog/Blog";
 import TipDetail from "./components/Blog/TipDetail";
 import News from "./components/News/News";
+import NewsDetail from "./components/News/NewsDetail";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<TipDetail />} />
         <Route path="/noticias" element={<News />} />
+        <Route path="/noticias/:id" element={<NewsDetail />} /> 
       </Routes>
     </Router>
   );

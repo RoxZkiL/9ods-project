@@ -1,9 +1,14 @@
-import React from 'react'
-import './styles/NewsCard.css'
+import React from 'react';
+import './styles/NewsCard.css';
 
-const NewsCard = ({ image, title, subtitle, info, date, topic }) => {
+const NewsCard = ({ id, image, title, subtitle, info, date, topic }) => {
+
+  const handleClick = () => {
+    window.open(`/noticias/${id}`, "_blank");
+  };
+
   return (
-    <div className="news-card">
+    <div className="news-card" onClick={handleClick}>
       <img src={image} alt={title} className="news-card-image" />
       <div className="news-card-content">
         <h3 className="news-card-title">{title}</h3>

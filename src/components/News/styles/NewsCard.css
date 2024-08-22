@@ -7,7 +7,7 @@
   max-width: 1000px; /* Tamaño máximo de la tarjeta */
   height: auto; /* Ajustar la altura automáticamente según el contenido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
+  margin: 1rem auto; /* Centrado automático */
   transition: transform 0.2s;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .news-card-subtitle {
-  font-size: 1,2rem;
+  font-size: 1.2rem;
   margin: 0.1rem 0;
   color: #777;
 }
@@ -65,4 +65,50 @@
 .news-card-date,
 .news-card-topic {
   font-style: italic;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .news-card {
+    flex-direction: column; /* Cambia a diseño de columna en pantallas pequeñas */
+  }
+
+  .news-card-image {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: auto; /* Ajustar la altura automáticamente según el contenido */
+  }
+
+  .news-card-content {
+    padding: 1rem;
+  }
+
+  .news-card-title {
+    font-size: 1.3rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .news-card-subtitle {
+    font-size: 1rem;
+  }
+
+  .news-card-info {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .news-card {
+    max-width: 90%; /* Limita el ancho máximo en pantallas medianas */
+  }
+
+  .news-card-title {
+    font-size: 1.4rem; /* Ajusta el tamaño de la fuente en pantallas medianas */
+  }
+
+  .news-card-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .news-card-info {
+    font-size: 0.95rem;
+  }
 }

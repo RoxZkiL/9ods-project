@@ -14,6 +14,7 @@ const RegisterForm = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [formError, setFormError] = useState("");
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +32,13 @@ const RegisterForm = () => {
     setFormError("");
 
     try {
+      // Mostrar el modal primero
+      setIsModalVisible(true);
+
+      // Esperar 6 segundos antes de continuar con el proceso de registro
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      // Realizar la petición de registro después de que el modal ha estado visible
       const response = await register({
         name,
         email,
@@ -49,9 +57,13 @@ const RegisterForm = () => {
       } else {
         setFormError(response.error || "Ocurrió un error inesperado.");
       }
+
+      // Ocultar el modal después del registro
+      setIsModalVisible(false);
     } catch (err) {
       console.error("Error durante el registro:", err);
       setFormError("Ocurrió un error al registrar. Inténtalo de nuevo.");
+      setIsModalVisible(false);
     }
   };
 
@@ -101,6 +113,13 @@ const RegisterForm = () => {
             <FormButton text="Crear Cuenta" />
           </form>
           {isLoading && <p>Registrando...</p>}
+          {isModalVisible && (
+            <div className="modal">
+              <div className="modal-content">
+                <p>¡Registro exitoso!</p>
+              </div>
+            </div>
+          )}
           {formError && <p className="error">{formError}</p>}
         </div>
       </div>

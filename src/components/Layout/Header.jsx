@@ -44,8 +44,8 @@ const Header = () => {
       const base64 = decodeURIComponent(atob(base64Url).replace(/\+/g, " "));
       const parsedToken = JSON.parse(base64);
       return parsedToken;
-    } catch (e) {
-      console.error("Failed to decode token", e);
+    } catch (error) {
+      console.error("Failed to decode token", error);
       return {};
     }
   };
@@ -54,7 +54,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="left-section">
-          <Link to="/Inicio">
+          <Link to="/inicio">
             <img src={logo} alt="Logo ODS9" className="figma-icon" />
           </Link>
         </div>

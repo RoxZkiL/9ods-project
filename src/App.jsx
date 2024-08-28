@@ -12,7 +12,7 @@ import Register from "./components/Forms/RegisterForm/Register";
 import Login from "./components/Forms/LoginForm/Login";
 import Blog from "./components/Blog/Blog";
 import TipDetail from "./components/Blog/TipDetail";
-import AboutUs from "./components/Nosotros/AboutUs";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   return (

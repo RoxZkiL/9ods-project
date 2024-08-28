@@ -12,7 +12,7 @@
   
   .background-container::before {
     content: "";
-    background-image: url(/src/assets/AboutUs/59dcb084-c0a7-4299-9f83-ee90c4b0a74c.jpg); 
+    background-image: url(/src/assets/AboutUs/TitleImageNosotros/59dcb084-c0a7-4299-9f83-ee90c4b0a74c.jpg); 
     background-size: cover;
     background-position: center;
     opacity: 0.5; 
@@ -27,7 +27,6 @@
   .nosotros-title {
     color: #fff;
     font-size: 5.5rem;
-    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.881);
     margin-top: 5rem;
   }
   
@@ -40,7 +39,7 @@
     
     .nosotros-title {
       font-size: 5rem;
-      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.881);
+      
     }
   }
   
@@ -52,7 +51,7 @@
     
     .nosotros-title {
       font-size: 3.5rem;
-      text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.881);
+      
     }
   }
   
@@ -64,7 +63,7 @@
     
     .nosotros-title {
       font-size: 7rem;
-      text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.881);
+      
     }
   }
   
@@ -76,7 +75,7 @@
     
     .nosotros-title {
       font-size: 7rem;
-      text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.881); 
+     
     }
   }
   

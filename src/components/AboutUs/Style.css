@@ -1,25 +1,6 @@
 
 
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h2, h3 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  div {
-    text-align: center;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
+
   .miembro-equipo {
     margin: 20px;
     text-align: center;
@@ -60,3 +41,23 @@ body {
   .icono:hover {
     transform: scale(1.1);
   }
+  .team-member-img {
+    transition: transform 0.3s ease; /* Animación suave */
+  }
+  
+  .team-member-img:hover {
+    transform: scale(1.1); /* Zoom del 10% */
+  }
+  /* Style.css */
+.rol {
+  color: #808080;
+  border: 2px solid #d0f0c0; 
+  border-radius: 5px;
+  padding: 2px 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rol:hover {
+  background-color: #47b17f;
+  color: white;
+}

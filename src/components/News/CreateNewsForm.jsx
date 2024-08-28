@@ -39,7 +39,9 @@ const CreateNewsForm = () => {
     }
   };
 
-
+  if (!user || !user.is_admin) {
+    return null;
+  }
 
   return (
     <div>

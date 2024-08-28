@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Modal from 'react-bootstrap/Modal';
+import  Modal from 'react-bootstrap/Modal';
+
 
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,18 +22,24 @@ import img13 from "../../assets/HowToContribute/EducationThewonderfulIdea/La_Ide
 import img14 from "../../assets/HowToContribute/EducationMario/Mario_y_el_Agujero_en_el_Cielo-600x763.jpg";
 import img15 from "../../assets/HowToContribute/Modal1/WhatsApp Image 2024-08-22 at 7.13.41 PM.jpeg";
 import img16 from "../../assets/HowToContribute/Modal1/infografia-aire-acondicionado.jpeg";
+import img17 from "../../assets/HowToContribute/Modal1/infografia-reciclaje.jpeg";
 
 
 
 function AllCollapseExample() {
   const [showFirstModal, setShowFirstModal] = useState(false);
-  const [showSecondModal, setShowSecondModal] = useState(false); // Nuevo estado para el segundo modal
+  const [showSecondModal, setShowSecondModal] = useState(false);
+  const [showThirdModal, setShowThirdModal] = useState (false);
+ 
 
   const handleCloseFirstModal = () => setShowFirstModal(false);
   const handleShowFirstModal = () => setShowFirstModal(true);
 
-  const handleCloseSecondModal = () => setShowSecondModal(false); // Función para cerrar el segundo modal
+  const handleCloseSecondModal = () => setShowSecondModal(false); 
   const handleShowSecondModal = () => setShowSecondModal(true);
+
+  const handleCloseThirdModal = () => setShowThirdModal(false);
+  const handleShowThirdModal = () => setShowThirdModal(true);
   return (
     <div>
       <header className="accordion-header">
@@ -53,8 +60,11 @@ function AllCollapseExample() {
                     <h4 >
                       Utiliza iluminación LED en casa o empresa.</h4>
                     <h6>Si dispones de grandes ventanales también puedes aprovechar las horas de luz natural y consultar la posibilidad de instalar placas fotovoltaicas para convertir la luz del sol en energía.</h6>
-                    <h6 onClick={handleShowFirstModal} style={{ cursor: 'pointer', color: 'green', textDecoration: 'underline', display: 'inline' }}>
-                      Infografía</h6>
+                    <h6>
+                    <button type="button" className="btn custom-btn" onClick={handleShowFirstModal}>
+                      Infografía
+                    </button>
+                    </h6>
                   </div>
                 </div>
                 <div className="content-row">
@@ -64,15 +74,25 @@ function AllCollapseExample() {
                     <h6 >
                       A veces, un aire acondicionado muy fuerte hace que sintamos frío en verano dentro de un establecimiento. Y lo mismo sucede en los hogares. Si controlas programas la calefacción y el aire acondicionado a temperaturas intermedias, el ambiente será más agradable y ahorrarás energía.
                       </h6>
-                      <h6 onClick={handleShowSecondModal} style={{ cursor: 'pointer', color: 'green', textDecoration: 'underline', display: 'inline' }}>
-                        Infografía</h6>
+                      <h6>
+                      <button type="button" className="btn custom-btn" onClick={handleShowSecondModal}>
+                      Infografía
+                    </button>
+                      </h6>
                   </div>
                 </div>
                 <div className="content-row">
                   <img src={img3} alt="Image not found" className="accordion-image" />
                   <div className="accordion-text">
                     <h4>Evita utilizar materiales que no sean reciclables.</h4>
-                    <h6>Separa los residuos, fomenta el reciclaje, los envases retornables y el material reciclado, como el papel para oficina o el aprovechamiento de materiales para crear objetos artesanales tipo DIY (hazlo tú mismo), son algunas de las acciones que puedes comenzar a implementar. La Industria Mexicana de Coca-Cola es el mayor reciclador de PET grado alimenticio en América Latina.</h6>
+                    <h6>
+                      Separa los residuos, fomenta el reciclaje, los envases retornables y el material reciclado, como el papel para oficina o el aprovechamiento de materiales para crear objetos artesanales tipo DIY (hazlo tú mismo), son algunas de las acciones que puedes comenzar a implementar. La Industria Mexicana de Coca-Cola es el mayor reciclador de PET grado alimenticio en América Latina.
+                    </h6>
+                    <h6>
+                    <button type="button" className="btn custom-btn" onClick={handleShowThirdModal}>
+                      Infografía
+                    </button>
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -182,25 +202,40 @@ function AllCollapseExample() {
         </Accordion>
       </div>
         {/* Modal */}
-      <Modal show={showFirstModal} onHide={handleCloseFirstModal} size="lg" centered>
-        <Modal.Header closeButton>
+      <Modal show={showFirstModal} onHide={handleCloseFirstModal} size="lg" fullscreen centered backdrop="static"  className="custom-modal-style-one">
+        <Modal.Header className="modal-header">
           <Modal.Title>¿En que beneficia usar Luz Led?</Modal.Title>
+          <button type="button" className="btn-close" onClick={handleCloseFirstModal}></button>
         </Modal.Header>
         <Modal.Body>
-          <img src={img15} alt="Imagen Modal" className="img-fluid" />
+          <img src={img15} alt="modal-content-one" className="img-fluid" />
         </Modal.Body>
       </Modal>
       
       {/* Segundo Modal */}
-      <Modal show={showSecondModal} onHide={handleCloseSecondModal} size="lg" centered>
-        <Modal.Header closeButton>
+      <Modal show={showSecondModal} onHide={handleCloseSecondModal} size="lg" fullscreen centered backdrop="static"  className="custom-modal-style-one">
+        <Modal.Header className="modal-header">
           <Modal.Title>Usa de forma moderada el aire acondicionado</Modal.Title>
+          <button type="button" className="btn-close" onClick={handleCloseSecondModal}></button>
         </Modal.Header>
         <Modal.Body>
-          <img src={img16} alt="Imagen Modal" className="img-fluid" />
+          <img src={img16} alt="modal-content-one" className="img-fluid" />
         </Modal.Body>
       </Modal>
-    </div>
+    
+     {/* Tercer Modal */}
+     <Modal show={showThirdModal} onHide={handleCloseThirdModal} size="lg" fullscreen centered backdrop="static"  className="custom-modal-style-one">
+        <Modal.Header className="modal-header">
+          <Modal.Title>Usa materiales reciclables </Modal.Title>
+          <button type="button" className="btn-close" onClick={handleCloseThirdModal}></button>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={img17} alt="modal-content-one" className="img-fluid" />
+        </Modal.Body>
+      </Modal>
+    
+ </div>
+
   );
 }
 

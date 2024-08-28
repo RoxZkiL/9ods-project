@@ -36,7 +36,7 @@
 .right-section {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Espacio entre los elementos de la derecha */
+    gap: 1rem; 
 }
 
 .menu-icon {
@@ -72,7 +72,7 @@
     list-style: none;
     display: none;
     flex-direction: column;
-    gap: 0.5rem; /* Reducir espacio entre los elementos */
+    gap: 0.5rem; 
     position: absolute;
     top: 4rem;
     right: 2rem;
@@ -81,7 +81,6 @@
     transform-origin: top;
     transition: transform 0.3s ease;
     z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links.open {
@@ -97,7 +96,6 @@
 .nav-links .no-decoration {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s ease;
 }
 
 .nav-links .no-decoration:hover {
@@ -109,10 +107,8 @@
     color: #fff;
 }
 
-.auth-buttons {
-    display: flex;
-    gap: 0.5rem;
-    margin-left: 1rem;
+.auth-buttons a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
 .auth-button {
@@ -124,6 +120,10 @@
     font-size: 1.1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.482);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Asegura que el botón no ocupe todo el alto del header */
 }
 
 .auth-button.login {
@@ -141,6 +141,30 @@
 .auth-button.register:hover {
     background-color: #666666be; 
 }
+
+.logout-button {
+    background-color: #808080; /* Misma color que el botón de registro */
+}
+
+.logout-button:hover {
+    background-color: #666666be; /* Misma color de hover que el botón de registro */
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    align-items: center; /* Centra los botones verticalmente */
+    height: auto;
+}
+
+.logedin-username {
+    font-size: 1.2rem;
+    color: rgba(63, 63, 63, 0.863);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
 
 /* Media Queries */
 @media (max-width: 821px) {

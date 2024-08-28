@@ -28,9 +28,9 @@ const Footer = () => {
       <div className="footer-section resources">
         <h4>Recursos</h4>
         <div className="resources-links">
-          <a href="#">Blog</a>
-          <a href="#">Contacto</a>
-          <a href="#">Sobre Nosotros</a>
+          <a href="/blog">Blog</a>
+          <a href="/contacto">Contacto</a>
+          <a href="/nosotros">Sobre Nosotros</a>
         </div>
       </div>
     </footer>

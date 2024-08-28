@@ -1,17 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import "./styles/Header.css";
 import logo from "../../assets/Layout/Header/logo.png";
 import navBarLinks from "./utils/Header";
 import { Link } from "react-router-dom";
+import AuthContext from "../AuthContext/AuthContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { user, logout } = useContext(AuthContext);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Manejar el scroll para agregar clase "scrolled" al header
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 0);
   };
@@ -27,7 +30,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="left-section">
-          <Link to="/Inicio">
+          <Link to="/inicio">
             <img src={logo} alt="Logo ODS9" className="figma-icon" />
           </Link>
         </div>
@@ -48,12 +51,23 @@ const Header = () => {
             ))}
           </ul>
           <div className={`auth-buttons ${isMenuOpen ? "open" : ""}`}>
-            <Link to="/login">
-              <button className="auth-button login">Log in</button>
-            </Link>
-            <Link to="/registro">
-              <button className="auth-button register">Registro</button>
-            </Link>
+            {user ? (
+              <>
+                <p className="logedin-username">Bienvenido, {user}!</p>
+                <button className="auth-button logout-button" onClick={logout}>
+                  Cerrar Sesión
+                </button>
+              </>
+            ) : (
+              <>
+                <Link to="/login">
+                  <button className="auth-button login">Log in</button>
+                </Link>
+                <Link to="/registro">
+                  <button className="auth-button register">Registro</button>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>

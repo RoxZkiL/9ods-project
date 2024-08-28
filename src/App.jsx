@@ -17,6 +17,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 function App() {
   return (
     <Router>
+<<<<<<< HEAD
       <Routes>
         <Route path="/" element={<Navigate to="/inicio" />} />
         <Route path="/inicio" element={<LandingPage />} />
@@ -28,6 +29,20 @@ function App() {
         <Route path="/blog/:id" element={<TipDetail />} />
         <Route path="/nosotros" element={<AboutUs />} />
       </Routes>
+=======
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Navigate to="/inicio" />} />
+          <Route path="/inicio" element={<LandingPage />} />
+          <Route path="/importancia" element={<Importance />} />
+          <Route path="/registro" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contacto" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<TipDetail />} />
+        </Routes>
+      </AuthProvider>
+>>>>>>> 6318c8f69946595334290fccffd1d6d97936847f
     </Router>
   );
 }

@@ -9,7 +9,7 @@ import paulinaImage from '../../assets/AboutUs/MeetTheTeam/avatar-3.png';
 
 const equipo = [
   { 
-    nombre: 'Paula Llanten', 
+    nombre: 'Paula Llantén', 
     rol: 'Desarrollador Frontend / UX UI', 
     imagen: paulaImage, // Usando la imagen importada
     github: 'https://github.com/Paulallntn', 
@@ -17,7 +17,7 @@ const equipo = [
     download: 'https://drive.google.com/file/d/1sr_xz2UkzTvb4uc9_lHMlti6xFRVHc1p/view?usp=sharing'
   },
   { 
-    nombre: 'Jesus Matute', 
+    nombre: 'Jesús Matute', 
     rol: 'Desarrollador FullStack', 
     imagen: jesusImage, // Usando la imagen importada
     github: 'https://github.com/roxzkil', 

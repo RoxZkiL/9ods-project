@@ -7,6 +7,7 @@ import NewsCard from './NewsCard';
 import LoadMoreButton from './LoadMoreButton';
 import './styles/News.css';
 import detailedNewsData from './utils/DetailedNewsData';
+import CreateNewsForm from './CreateNewsForm';
 
 const News = () => {
   const [visibleCards, setVisibleCards] = useState(4); // Mostrar 3 noticias inicialmente
@@ -22,6 +23,7 @@ const News = () => {
       <Header />
       <TitleNews />
       <main className='container-news'>
+        <div className='bottoncreate'><CreateNewsForm/></div>
         <h1 className='main-tittle'>Lo más reciente</h1>
         <div className="main-news">
           <NewsCard 

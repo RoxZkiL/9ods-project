@@ -1,12 +1,27 @@
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import "./styles/SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
+  const [search, setSearch] = useState("");
+
+  const handleInputChange = (e) => {
+    setSearch(e.target.value);
+    onSearch(e.target.value);
+  };
+
   return (
     <div className="main-searchbar-container">
       <h3 className="searchbar-title">Recursos y Tips</h3>
       <div className="searchbar-container">
         <div className="searchbar-wrapper">
-          <input className="searchbar" type="text" placeholder="Buscar..." />
+          <input
+            className="searchbar"
+            type="text"
+            placeholder="Buscar..."
+            value={search}
+            onChange={handleInputChange}
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"

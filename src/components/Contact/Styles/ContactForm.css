@@ -135,8 +135,48 @@
   background-color: #34d399bd;
 }
 
+.modal {
+  position: fixed;
+  top: 5rem;
+  right: 3rem;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  border: 2px solid #2ed195; /* Borde verde */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-content {
+  text-align: center;
+  color: #2ed195;
+  font-weight: bold;
+}
+
+.modal-submitting {
+  border: 2px solid rgb(123, 214, 3);
+}
+
+.modal-submitting .modal-content p {
+  color: rgb(123, 214, 3);
+}
+
+.modal.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
 /* Media Queries for Responsive Design */
 @media (min-width: 769px) {
+  .modal {
+    top: 6rem;
+    right: 3rem;
+    padding: 15px;
+  }
+
   .contact-container {
     flex-direction: row;
     align-items: flex-start;
@@ -167,6 +207,12 @@
 }
 
 @media (max-width: 768px) {
+  .modal {
+    top: 6rem;
+    right: 3rem;
+    padding: 15px;
+  }
+
   .formulario-wrapper {
     padding: 1rem 0;
   }

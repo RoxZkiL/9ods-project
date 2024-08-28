@@ -11,7 +11,8 @@ import Importance from "./components/Importance/Importance";
 import Register from "./components/Forms/RegisterForm/Register";
 import Login from "./components/Forms/LoginForm/Login";
 import Blog from "./components/Blog/Blog";
-import AboutUs from "./components/Nosotros/AboutUs";
+import TipDetail from "./components/Blog/TipDetail";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<TipDetail />} />
         <Route path="/nosotros" element={<AboutUs />} />
       </Routes>
     </Router>

@@ -1,0 +1,83 @@
+.main-containernews {
+  padding: 1rem 2rem 2rem 2rem; /* Reducido el padding para ajustar el espaciado */
+  background-color: #fff;
+  text-align: center;
+  position: relative; 
+  z-index: 1;
+  height: 25vh; /* Reducido para hacer el contenedor aún más alto */
+  display: flex;
+  flex-direction: column; /* Añadido */
+  align-items: center;
+  justify-content: center;
+  background: rgba(45, 56, 51, 0.87);  
+}
+
+.main-containernews::before {
+  content: "";
+  background-image: url('../../../assets/Importance/TitleImage/solar-4478105_1920.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.title-textnews {
+  color: #fff;
+  font-size: 5.5rem; /* Mantener el tamaño del texto como está */
+  margin-bottom: 0.5rem; /* Reducido para menos espacio debajo del título */
+}
+
+/* Media queries */
+@media (max-width: 575px) {
+  .main-containernews {
+      padding: 1rem 1rem 2rem 1rem; /* Ajustado para pantallas pequeñas */
+      height: 35vh; /* Reducido para pantallas pequeñas */
+  }
+  
+  .title-textnews {
+      font-size: 2rem; /* Mantener el tamaño del texto para pantallas pequeñas */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .main-containernews {
+      padding: 1rem 1.5rem 3rem 1.5rem;
+      height: 40vh; /* Reducido para pantallas medianas */
+  }
+  
+  .title-textnews {
+      font-size: 2.5rem; /* Mantener el tamaño del texto para pantallas medianas */
+  }
+}
+
+@media (min-width: 768px) {
+  .main-containernews {
+      padding: 1rem 2rem 4rem 2rem;
+      height: 50vh; /* Ajustado para pantallas grandes */
+  }
+  
+  .title-textnews {
+      font-size: 3.5rem; /* Mantener el tamaño del texto para pantallas grandes */
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-containernews {
+      padding: 1rem 2rem 4rem 2rem;
+      height: 55vh; /* Ajustado para pantallas muy grandes */
+  }
+  
+  .title-textnews {
+      font-size: 4.5rem; /* Mantener el tamaño del texto para pantallas muy grandes */
+  }
+}
+
+.subtitle {
+  color: #dadada;
+  font-size: xx-large; /* Ajustado para mejor escala */
+}

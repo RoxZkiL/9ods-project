@@ -16,6 +16,7 @@ import News from "./components/News/News";
 import NewsDetail from "./components/News/NewsDetail";
 import AboutUs from "./components/AboutUs/AboutUs";
 import { AuthProvider } from "./components/AuthContext/AuthContext";
+import HowToContribute from "./components/ComoContribuir/HowToContribute";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/nosotros" element={<AboutUs />} />
           <Route path="/noticias" element={<News />} />
           <Route path="/noticias/:id" element={<NewsDetail />} />
+          <Route path="/contribuir" element={<HowToContribute />} />
         </Routes>
       </AuthProvider>
     </Router>

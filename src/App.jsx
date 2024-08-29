@@ -12,6 +12,8 @@ import Register from "./components/Forms/RegisterForm/Register";
 import Login from "./components/Forms/LoginForm/Login";
 import Blog from "./components/Blog/Blog";
 import TipDetail from "./components/Blog/TipDetail";
+import News from "./components/News/News";
+import NewsDetail from "./components/News/NewsDetail";
 import AboutUs from "./components/AboutUs/AboutUs";
 import { AuthProvider } from "./components/AuthContext/AuthContext";
 
@@ -29,6 +31,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<TipDetail />} />
           <Route path="/nosotros" element={<AboutUs />} />
+          <Route path="/noticias" element={<News />} />
+          <Route path="/noticias/:id" element={<NewsDetail />} />
         </Routes>
       </AuthProvider>
     </Router>

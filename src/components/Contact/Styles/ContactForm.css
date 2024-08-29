@@ -7,6 +7,7 @@
   min-height: 100vh;
   background: url('../../../assets/Contact/ContactFrom/environmental-8029976.jpg') no-repeat center center/cover;
   box-sizing: border-box;
+  padding: 2rem 0;
 }
 
 .formulario-wrapper::before {
@@ -26,7 +27,6 @@
 }
 
 .formulario-wrapper h2 {
-  margin-top: 0;
   margin-bottom: 4rem;
   color: #fff;
   font-size: 4.2rem;
@@ -204,6 +204,10 @@
     justify-content: flex-start;
     text-align: center;
   }
+
+  .formulario-wrapper h2 {
+    margin-top: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -214,13 +218,13 @@
   }
 
   .formulario-wrapper {
-    padding: 1rem 0;
+    padding: 3rem 0;
   }
 
   .formulario-wrapper h2 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 
   .contact-container {

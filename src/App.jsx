@@ -14,22 +14,27 @@ import Blog from "./components/Blog/Blog";
 import TipDetail from "./components/Blog/TipDetail";
 import News from "./components/News/News";
 import NewsDetail from "./components/News/NewsDetail";
+import AboutUs from "./components/AboutUs/AboutUs";
+import { AuthProvider } from "./components/AuthContext/AuthContext";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Navigate to="/inicio" />} />
-        <Route path="/inicio" element={<LandingPage />} />
-        <Route path="/importancia" element={<Importance />} />
-        <Route path="/registro" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/contacto" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<TipDetail />} />
-        <Route path="/noticias" element={<News />} />
-        <Route path="/noticias/:id" element={<NewsDetail />} /> 
-      </Routes>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Navigate to="/inicio" />} />
+          <Route path="/inicio" element={<LandingPage />} />
+          <Route path="/importancia" element={<Importance />} />
+          <Route path="/registro" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contacto" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<TipDetail />} />
+          <Route path="/nosotros" element={<AboutUs />} />
+          <Route path="/noticias" element={<News />} />
+          <Route path="/noticias/:id" element={<NewsDetail />} />
+        </Routes>
+      </AuthProvider>
     </Router>
   );
 }

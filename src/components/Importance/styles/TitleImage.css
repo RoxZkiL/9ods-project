@@ -1,14 +1,13 @@
 .main-container {
   padding: 1rem 4rem 6rem 4rem;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
   position: relative; 
   z-index: 1;
-  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(15, 29, 15, 0.786);
+  background: rgba(94, 94, 94, 0.881);
 }
 
 .main-container::before {
@@ -16,7 +15,7 @@
   background-image: url('../../../assets/Importance/TitleImage/solar-4478105_1920.jpg'); 
   background-size: cover;
   background-position: center;
-  opacity: 0.4; 
+  opacity: 0.3; 
   position: absolute;
   top: 0;
   left: 0;
@@ -35,29 +34,31 @@
 @media (max-width: 575px) {
   .main-container {
     padding: 1rem 2rem 4rem 2rem;
-    height: 50vh;
+    height: 40vh; /* Aumenta la altura */
   }
   
   .title-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-top: 5rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .main-container {
     padding: 1rem 3rem 5rem 3rem;
-    height: 50vh;
+    height: 40vh; /* Aumenta la altura */
   }
   
   .title-text {
     font-size: 3rem;
+    margin-top: 5rem;
   }
 }
 
 @media (min-width: 768px) {
   .main-container {
     padding: 1rem 4rem 6rem 4rem;
-    height: 50vh;
+    height: 60vh; /* Aumenta la altura */
   }
   
   .title-text {
@@ -68,7 +69,7 @@
 @media (min-width: 1024px) {
   .main-container {
     padding: 1rem 4rem 6rem 4rem;
-    height: 50vh;
+    height: 60vh; /* Aumenta la altura */
   }
   
   .title-text {

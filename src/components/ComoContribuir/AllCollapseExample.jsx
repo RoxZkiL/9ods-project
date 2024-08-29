@@ -6,7 +6,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles2/Accordion.css";
 import img from "../../assets/HowToContribute/FirstAccordion/Luz-led.png";
-import headerImg from "../../assets/HowToContribute/HeaderImg/header-contribuir.jpg";
+import headerImg from "../../assets/HowToContribute/HeaderImg/header-contribuir.jpeg"
 import img2 from "../../assets/HowToContribute/SeconSection/aire-acondicionado.jpg";
 import img3 from "../../assets/HowToContribute/ThirdSection/botellas-vidrio.jpg";
 import img4 from "../../assets/HowToContribute/Companies1/empresas-1.jpeg";
@@ -44,7 +44,11 @@ function AllCollapseExample() {
     <div>
       <header className="accordion-header">
         <img src={headerImg} alt="Encabezado" className="header-image" />
-        <div className="header-text">¿Cómo contribuir?</div>
+        <div className="header-text">
+          ¿Cómo contribuir?
+          <h2 className="sub-accordion">Conoce las mejores alternativas para una vida sustentable</h2>
+
+        </div>
       </header>
 
       <div className="accordion-container">

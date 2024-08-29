@@ -1,17 +1,21 @@
 .accordion-header {
-    background-color: #ffffff;
+    background-color: #5c5c5c;
     margin: 0;
     padding: 0;
     width: 100%;
     position: relative; /* Permite el posicionamiento absoluto del contenido dentro */
     text-align: center;
     border-bottom: 1px solid #dee2e6;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Arial, 'Arial Narrow', Arial, sans-serif;
+}
+
+.sub-accordion {
+  color: #e4e4e4;
 }
 
 .accordion-title {
     text-align: center; /* Centra el texto horizontalmente */
-    font-size: 1.5rem; /* Tamaño del título */
+    font-size: 2rem; /* Tamaño del título */
     font-weight: bold; /* Grosor del título */
     margin: 20px 0; /* Espacio alrededor del título */
     color: rgb(0, 0, 0); /* Color del texto */
@@ -26,7 +30,7 @@
 .header-image {
     width: 100%; /* Ajusta la imagen al tamaño del contenedor */
     height: auto;
-    filter: hue-rotate(15deg) brightness(80%) opacity(90%)
+    filter: hue-rotate(15deg) brightness(80%) opacity(60%)
 }
 
 .header-text {
@@ -37,7 +41,6 @@
     color: #fff; /* Color del texto */
     font-size: 4rem; /* Tamaño del texto */
     font-weight: bold; /* Grosor del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad sobre la imagen */
 }
 
 @media (max-width: 700px) {
@@ -96,7 +99,8 @@
 }
 
 .accordion-text h4 {
-    color:rgb(33, 33, 33);
+  color: #228862bd;
+  text-align: left; /* Alinea el texto a la izquierda dentro de su contenedor */
 }
 
 @media (max-width: 700px) {
